@@ -49,18 +49,6 @@
     }
     ucsm.onstatechange = detectCase;
 
-    // Tell system app we're typing, so it can disable home button for a bit.
-    var TYPING_EVENTCODE = 1;  // Dummy event code to send upstream.
-    var imEngine = window.app.inputMethodManager.currentIMEngine;
-    var defaultClickHandler = imEngine.click;
-    var clickNotifier = function(keycode, x, y) {
-      defaultClickHandler(keycode, x, y);  // Trigger default behavior.
-      // TODO: Narrow down origin.
-      window.top.postMessage(TYPING_EVENTCODE, '*');  // Ohai, System app.
-      console.log('kilroy was here.');
-    }
-    imEngine.click = clickNotifier;
-
 
     // Only initialize once.
     document.documentElement.dataset.keyboardTweaksInitialized = true;

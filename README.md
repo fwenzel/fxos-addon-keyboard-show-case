@@ -1,4 +1,4 @@
-# fxos-addon-keyboard-tweaks
+# fxos-addon-keyboard-show-case
 
 A Firefox OS add-on tweaking the built-in keyboard.
 
@@ -6,9 +6,6 @@ A Firefox OS add-on tweaking the built-in keyboard.
 ## Features
 
 * alter lower/uppercase characters based on Shift key status
-
-* Disable Home button for a short while after typing to avoid accidental
-  hitting of the Home button instead of space.
 
 
 ## Contributing

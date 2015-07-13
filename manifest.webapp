@@ -1,6 +1,6 @@
 {
-  "name": "Keyboard - Misc Tweaks",
-  "description": "Avoid accidental Home button press. Lowercase letters.",
+  "name": "Keyboard - Show Case",
+  "description": "Case sensitive keyboard labels.",
   "developer": {
     "name": "Fred Wenzel",
     "url": "http://fredericiana.com"
@@ -9,16 +9,11 @@
   "role": "addon",
   "type": "certified",
   "customizations": [{
-    "filter": "system.gaiamobile.org",
-    "css": [],
-    "scripts": ["system.js"]
-  },
-  {
     "filter": "keyboard.gaiamobile.org",
     "css": [],
     "scripts": ["keyboard.js"]
   }],
   "icons": {
-    "128": "/style/icons/128.png"
+    "128": "/icons/keyboard-128.png"
   }
 }
