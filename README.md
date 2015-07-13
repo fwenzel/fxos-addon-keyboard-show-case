@@ -13,6 +13,10 @@ A Firefox OS add-on tweaking the built-in keyboard.
 Issues and Pull Requests welcome. Please file an Issue before submitting code.
 
 
+## Acknowledgments
+
+The simple keyboard logo is an altered version of a Google "Material Design" icon, CC-by licensed.
+
 ## License
 
 This is free software, &copy; 2015 Fred Wenzel and licensed under an Apache
