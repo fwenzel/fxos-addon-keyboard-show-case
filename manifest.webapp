@@ -1,0 +1,24 @@
+{
+  "name": "Keyboard - Misc Tweaks",
+  "description": "Avoid accidental Home button press. Lowercase letters.",
+  "developer": {
+    "name": "Fred Wenzel",
+    "url": "http://fredericiana.com"
+  },
+  "package_path": "package.zip",
+  "role": "addon",
+  "type": "certified",
+  "customizations": [{
+    "filter": "system.gaiamobile.org",
+    "css": [],
+    "scripts": ["system.js"]
+  },
+  {
+    "filter": "keyboard.gaiamobile.org",
+    "css": [],
+    "scripts": ["keyboard.js"]
+  }],
+  "icons": {
+    "128": "/style/icons/128.png"
+  }
+}
