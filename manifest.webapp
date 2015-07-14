@@ -7,6 +7,7 @@
   },
   "role": "addon",
   "type": "certified",
+  "package_path": "package.zip",
   "customizations": [{
     "filter": "keyboard.gaiamobile.org",
     "css": [],
