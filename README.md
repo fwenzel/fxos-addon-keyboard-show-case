@@ -1,11 +1,10 @@
-# fxos-addon-keyboard-show-case
+# Keyboard - Show Case
 
-A Firefox OS add-on tweaking the built-in keyboard.
+A Firefox OS add-on tweaking the built-in keyboard. It shows lower/uppercase characters based on Shift key status.
 
 
-## Features
-
-* alter lower/uppercase characters based on Shift key status
+## Screenshot
+![Keyboard - Show Case screenshot](https://fwenzel.github.io/fxos-addon-keyboard-show-case/screenshot.png)
 
 
 ## Contributing
