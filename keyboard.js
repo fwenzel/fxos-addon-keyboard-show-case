@@ -28,7 +28,7 @@
     var styleText = document.createTextNode([
       '#keyboard .key-element { visibility: visible; }',
       '#keyboard .keyboard-type-container.lowercase { text-transform: lowercase; }'
-    ].join('\n'))
+    ].join('\n'));
     sheet.appendChild(styleText);
 
     document.head.appendChild(sheet);
