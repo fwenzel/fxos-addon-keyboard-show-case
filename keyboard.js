@@ -3,12 +3,10 @@
 (function () {
 
   // Only initialize once.
-  if (!document.documentElement.dataset.keyboardTweaksInitialized) {
-    if (document.documentElement) {
-      initialize();
-    } else {
-      window.addEventListener('DOMContentLoaded', initialize);
-    }
+  if (document.documentElement) {
+    initialize();
+  } else {
+    window.addEventListener('DOMContentLoaded', initialize);
   }
 
   function initialize() {
@@ -28,29 +26,11 @@
     sheet.setAttribute('type', 'text/css');
 
     var styleText = document.createTextNode([
-      '#keyboard .key-element { visibility: visible; }'
+      '#keyboard .key-element { visibility: visible; }',
+      '#keyboard .keyboard-type-container.lowercase { text-transform: lowercase; }'
     ].join('\n'))
     sheet.appendChild(styleText);
 
     document.head.appendChild(sheet);
-
-    // Transform keys to lowercase when Shift is off.
-    var ucsm = window.app.upperCaseStateManager;
-    var defaultStateChange = ucsm.onstatechange;
-    var detectCase = function(evt) {
-      defaultStateChange(evt);  // Trigger default behavior.
-
-      // Adjust case.
-      if (!ucsm.isUpperCase) {
-        cont.style = 'text-transform: lowercase';
-      } else {
-        cont.style = '';
-      }
-    }
-    ucsm.onstatechange = detectCase;
-
-
-    // Only initialize once.
-    document.documentElement.dataset.keyboardTweaksInitialized = true;
   }
 }());
