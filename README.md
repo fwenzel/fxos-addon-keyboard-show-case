@@ -1,5 +1,7 @@
 # Keyboard - Show Case
 
+# NOTE: This add-on's behavior has been uplifted into the Gaia code, [bug 965211](https://bugzilla.mozilla.org/show_bug.cgi?id=965211).
+
 A Firefox OS add-on tweaking the built-in keyboard. It shows lower/uppercase characters based on Shift key status.
 
 
